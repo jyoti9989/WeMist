@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Category Page</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Select Your Categories</h1>
+
+    <form id="categoryForm">
+      <div class="category">
+        <input type="checkbox" id="serum" name="category" value="Serum" />
+        <label for="serum">Serum</label>
+      </div>
+
+      <div class="category">
+        <input type="checkbox" id="cleanser" name="category" value="Cleanser" />
+        <label for="cleanser">Cleanser</label>
+      </div>
+
+      <div class="category">
+        <input type="checkbox" id="moisturizer" name="category" value="Moisturizer" />
+        <label for="moisturizer">Moisturizer</label>
+      </div>
+
+      <div class="category">
+        <input type="checkbox" id="sunscreen" name="category" value="Sunscreen" />
+        <label for="sunscreen">Sunscreen</label>
+      </div>
+
+      <div class="category">
+        <input type="checkbox" id="bodycare" name="category" value="Body Care" />
+        <label for="bodycare">Body Care</label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script>
+    const form = document.getElementById("categoryForm");
+    const result = document.getElementById("result");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const selected = [];
+      const checkboxes = document.querySelectorAll('input[name="category"]:checked');
+      checkboxes.forEach((cb) => selected.push(cb.value));
+      result.innerText = selected.length
+        ? "Selected Categories: " + selected.join(", ")
+        : "No category selected.";
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<form action="send.php" method="post" enctype="multipart/form-data">
+    <table  border="1" align="center" width="500px" >
+        <tr>
+        <td   colspan="2" align="center"><h2>Buy Now</h2></td>
+        </tr>
+        <tr>
+            <td> User Name</td>
+            <td><input type="text" name="  user name" placeholder="enter name"></td>
+        </tr>
+        <tr>
+            <td> Email</td>
+            <td><input type="email" name="email" placeholder="enter email" ></td>
+            <tr>
+                <td>password</td>
+                <td><input type="password" maxlength="8" minlength="6" placeholder="enter password"></td>
+            </tr>
+            
+            <td>gender</td>
+            <tr>
+                <td><input type="radio" name="gender"value="male" >Male  <input type="radio"  name="gender" value="female" >Female</td>
+            </tr>
+            <tr>
+            
+                <td>Age</td>
+                <td><input type="number" min="18" max="40" ></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td> 
+                    <select  name="city"></option>
+                        <option selected value="mum">Mumbai</option>
+                        <option>Noida</option>
+                        <option>Gurugram</option>
+                        <option value="Gue">Guwahati</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td> Message</td>
+                <td><textarea cols="40" rows="10"></textarea></td> 
+            </tr>
+            <tr >
+                <td colspan="2" align="center">
+                    <button type="submit" >Submit</button>
+                    <button type="button" >button</button>
+                    <button type="reset" >Reset</button>
+                </td>
+                
+        
+        
+            </td>
+        </tr>
+        
+
+    </table>
+</form>

@@ -1,0 +1,1040 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navigation Bar */
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .right-section input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .search-btn {
+    background-color: #003b80;
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ffcc00; /* or any highlight color */
+    text-decoration: underline;
+  }
+  
+  
+  .search-btn i {
+    font-size: 16px;
+  }
+  
+  .icon-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #003b80;
+    font-size: 14px;
+  }
+  
+  .icon-link i {
+    font-size: 16px;
+  }
+  .main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .brand-logo {
+    text-align: center;
+  }
+  
+  .brand-logo img {
+    height: 40px; /* adjust as needed */
+  }
+  
+  /* CSS */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* space-between or space-around depending on design */
+    padding: 10px 20px;
+    background-color: white;
+  }
+  
+  .logo {
+    height: 50px; /* Adjust as needed */
+    margin-right: 20px;
+  }
+  
+    
+.top-header {
+    background-color: #003b80; /* Navy blue */
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 8px 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .top-header strong {
+    color:white; /* Optional: highlight code in gold/yellow */
+  }
+  
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .logo img {
+    height: 35px; /* ya jitna fit lage */
+    width: auto;
+  }
+  
+  .logo span {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-cart {
+    display: flex;
+    align-items: center;
+    
+}
+
+.search-cart input {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: rgb(66, 94, 94);
+    padding: 50px;
+
+}
+
+.offer-text h1 {
+    font-size: 40px;
+}
+
+.offer-text span {
+    color: orange;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+}
+
+.images img {
+    width: 200px;
+    margin: 10px;
+}
+
+.sale-banner {
+    background: orange;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Steps Section */
+.steps {
+    background: burlywood;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.steps ul {
+    list-style: none;
+}
+
+.steps span {
+    color: orange;
+}
+
+/* Footer */
+footer {
+    background: #b4bfc9;
+    color: white;
+    padding: 10px;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Slider Container */
+.slider {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Slide Wrapper */
+.slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Each Slide */
+.slide {
+    width: 100%;
+    flex: 0 0 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Navigation Dots */
+.navigation-manual {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.manual-btn {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.manual-btn:hover {
+    background: white;
+}
+
+/* Automatic Slideshow (CSS Animation) */
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0%); }
+}
+
+.slides {
+    animation: slide 12s infinite;
+}
+
+/* Manual Navigation */
+#slide1:checked ~ .slides { transform: translateX(0%); }
+#slide2:checked ~ .slides { transform: translateX(-100%); }
+#slide3:checked ~ .slides { transform: translateX(-200%); }
+#slide4:checked ~ .slides { transform: translateX(-300%); }
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+}
+
+.container {
+    height: fit-content;
+    width: fit-content;
+}
+
+/* Product Card Styling */
+.product-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    border: 2px solid #ddd;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Badge (BEST SELLER) */
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Product Image */
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Title */
+.product-card h5 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Description */
+.product-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Rating */
+.rating {
+    font-size: 14px;
+    color: #ffa500;
+    margin: 5px 0;
+}
+
+/* Price */
+.product-card h4 {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Add to Cart Button */
+.product-card .btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-card .btn:hover {
+    background: #0056b3;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* Promotional Banner */
+.promo-banner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.promo-banner:hover {
+    transform: translateY(-5px);
+}
+
+/* Banner Image */
+.promo-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Promo Text */
+.promo-text {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: #fff;
+    text-align: left;
+}
+
+.promo-text h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.promo-text p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.promo-text h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.promo-text span {
+    color: yellow;
+}
+
+/* SPF Badge */
+.spf-badge {
+    width: 60px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Shop Now Button */
+.btn {
+    background: #66778a;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: justify ;
+    
+    
+}
+
+/* Section Title */
+.section-title {
+    font-size: 28px;
+    margin: 20px 0;
+    font-weight: bold;
+    
+}
+
+/* Product Slider */
+.product-slider {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+/* Product Card */
+.product-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Deal Timer */
+.deal-timer {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: purple;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Product Image */
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Product Title */
+.product-card h5 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Product Description */
+.product-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Rating */
+.rating {
+    font-size: 14px;
+    color: #ffa500;
+    margin: 5px 0;
+}
+
+/* Price Section */
+.price {
+    margin: 10px 0;
+}
+
+.current-price {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.original-price {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 5px;
+}
+
+.discount {
+    font-size: 14px;
+    color: green;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/* Add to Cart Button */
+.product-card .btn {
+    background: #3d4957;
+    color: rgb(228, 141, 141);
+    border: none;
+    padding: 15px 15px;
+    width: 100%;zx
+
+}
+
+.product-card .btn:hover {
+    background: #0056b3;
+}
+
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Section Title */
+.section-title {
+    font-size: 28px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* Product Slider */
+.product-slider {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+/* Product Card */
+.product-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    min-width: 250px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Badges */
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.best-seller {
+    background: red;
+}
+
+.trending {
+    background: orange;
+}
+
+/* Product Image */
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Product Title */
+.product-card h5 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Product Description */
+.product-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Rating */
+.rating {
+    font-size: 14px;
+    color: #ffa500;
+    margin: 5px 0;
+}
+
+/* Price */
+h4 {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Add to Cart Button */
+.btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+.trending-section {
+    
+    padding: 40px 0;
+}
+.lightning-deal-section {
+    
+    padding: 40px; ;
+    
+}
+body {
+    font-family: Arial, sans-serif;
+    
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    
+}
+
+h2 {
+    margin-bottom: 20px;
+
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.tag {
+    background:#ffa500;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+.rating {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    gap: 0%;
+
+    
+}
+
+
+/* Section Title */
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+
+/* Product Card */
+.product-card {
+    background: white;
+    
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Deal Timer */
+.deal-timer {
+    top: 10px;
+    left: 10px;
+    background: purple;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Product Image */
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Product Title */
+.product-card h5 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Product Description */
+.product-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Rating */
+.rating {
+    font-size: 14px;
+    color: #ffa500;
+    margin: 5px 0;
+}
+
+/* Price Section */
+.price {
+    margin: 10px 0;
+}
+
+.current-price {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.original-price {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 5px;
+}
+
+.discount {
+    font-size: 14px;
+    color: green;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/* Add to Cart Button */
+.product-card .btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-card .btn:hover {
+    background: #0056b3;
+}
+
+
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    
+    text-align: center;
+   min-width: 1200px;
+    
+}
+
+/* Section Styling */
+.serum-section {
+    
+    
+    max-width: 1200px;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Product Slider */
+.product-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px;
+    white-space: nowrap;
+}
+
+/* Product Card */
+.product-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    min-width: 250px;
+    white-space: normal;
+}
+
+/* ⚡ Hover Effect (Zoom-in) */
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Badges */
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.trending {
+    background: orange;
+}
+
+
+
+/* Product Image */
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Product Title */
+.product-card h5 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Product Description */
+.product-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Rating */
+.rating {
+    font-size: 14px;
+    color: #ffa500;
+    margin: 5px 0;
+}
+
+/* Price */
+h4 {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* 🛍️ Add to Cart Button */
+.product-card .btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* 🎭 Button Hover Effect */
+.product-card .btn:hover {
+    background: #c59489;
+    transform: scale(1.1);
+}
